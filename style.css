@@ -1,6 +1,6 @@
-
-
-/* Basic page style resets */
+h1{
+  color: #354531;
+}
 body {
   margin: 15px;
   border: 0px;
@@ -28,7 +28,7 @@ body {
 h2
 {
   text-align: center;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 .searchbar
@@ -94,15 +94,23 @@ h2
   display: flex;
 }
 
-.infocontent
-{
+.infocontent {
   background: white;
-  width: 80%;
-  max-width: 800px;
-  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
   border-radius: 10px;
   position: relative;
   text-align: center;
+  box-sizing: border-box;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.infocontent p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 10px 0;
 }
 
 
@@ -129,3 +137,27 @@ h2
   object-fit: contain;
   margin-bottom: 15px;
 }
+
+.checkbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;  /* light gray bar */
+  padding: 6px 0;
+  border-top: 1px solid #ccc;
+}
+
+.checkbar input[type="checkbox"] {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.checkbar label {
+  font-size: 0.9rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+
