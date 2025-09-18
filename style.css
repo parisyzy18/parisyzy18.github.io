@@ -141,7 +141,7 @@ h2
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f0f0f0;  /* light gray bar */
+  background-color: #f0f0f0;
   padding: 6px 0;
   border-top: 1px solid #ccc;
 }
